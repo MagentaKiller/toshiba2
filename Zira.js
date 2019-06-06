@@ -11,7 +11,7 @@ const IPC = require('./src/IPC.js');
 
 class Zira {
   constructor({ firstShardID, lastShardID, maxShards, cluster }) {
-    this.bot = new Eris(process.env.TOKEN, {
+    this.bot = (process.env.TOKEN, {
       disableEvents: {
         TYPING_START: true,
         PRESENCE_UPDATE: true,
